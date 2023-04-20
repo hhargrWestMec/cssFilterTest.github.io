@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #img {
+            filter: grayscale(1);
+        }
+
+        .wrapper {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(2, 50%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <img src="./img1.jpg" id="img"> -->
+    <div class="wrapper">
+
+        <!-- Landscape Image -->
+        <img src="./landscape.jpg" width="720" height="480" style="filter: opacity(1);">
+        <h1>No Transparency</h1>
+
+        <img src="./landscape.jpg" width="720" height="480" style="filter: opacity(0);">
+        <h1>Completely Transparent</h1>
+
+        <img src="./landscape.jpg" width="720" height="480" style="filter: opacity(0.5);">
+        <h1>Half Transparency</h1>
+
+        <img src="./landscape.jpg" width="720" height="480" style="filter: saturate(2);">
+        <h1>Saturate</h1>
+
+        <!-- Sunset Image -->
+        <img src="./sunset.jpg" width="808" height="540" style="filter: grayscale(1);">
+        <h1>100% Grayscale</h1>
+
+        <img src="./sunset.jpg" width="808" height="540" style="filter: sepia(100%);">
+        <h1>100% Sepia</h1>
+    </div>
+</body>
+</html>
